@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GAMING WEBSITE</title>
+    <link rel="stylesheet" href="final.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <a href="index.html" class="logo">GAME<span>ZONE</span></a>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#hotgames">Hot Games</a></li>
+            <li><a href="#tourna">Tournaments</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBox">
+                <a href="#hotgames"><i class='bx bx-search'></i></a>
+                <input type="text" id="gameSearch" placeholder="Search games...">
+            </div>
+        </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+
+    <div class="banner" id="home">
+        <div class="bg">
+            <div class="content">
+              <h1>HOME OF ALL<br />SOLID GAMERS</h1><br />
+              <a href="#about" class="btn">Browse Now!</a>
+            </div>
+            <img src="twoback.png" alt="background">
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <img src="about.png" alt="About Us Image">
+        <div class="cntbx">
+            <h2>About Us</h2>
+            <p>
+                We're a passionate team of gamers dedicated to creating an inclusive community
+                where players of all levels can connect, compete, and have fun. From casual play
+                to epic tournaments, we aim to bring the best of gaming to everyone.
+            </p>
+        </div>
+    </div>
+
+    <div class="games" id="hotgames">
+        <h2>HOT GAMES</h2>
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="pc">PC Games</li>
+            <li class="list" data-filter="mobiletablet">Mobile/Tablet Games</li>
+        </ul>
+
+        <div class="cardbx">
+            <div class="card" data-item="pc">
+                <div class="box">
+                    <img src="hot1.webp" alt="Valorant">
+                    <div class="box-text">
+                        <h2>Valorant</h2>
+                        <h3>Action</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.9</span>
+                            </div>
+                            <a href="VALO.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="mobiletablet">
+                <div class="box">
+                    <img src="new1.jpg" alt="Mobile Legends">
+                    <div class="box-text">
+                        <h2>Mobile Legends</h2>
+                        <h3>Action</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.1</span>
+                            </div>
+                            <a href="ML.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <div class="box">
+                    <img src="hot2.jpg" alt="Metal Gear Solid 5">
+                    <div class="box-text">
+                        <h2>Metal Gear Solid 5</h2>
+                        <h3>Horror</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="GEAR.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="mobiletablet">
+                <div class="box">
+                    <img src="new2.jpg" alt="Call of Duty Mobile" >
+                    <div class="box-text">
+                        <h2>Call of Duty: Mobile</h2>
+                        <h3>Action</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.0</span>
+                            </div>
+                            <a href="COD.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <div class="box">
+                    <img src="hot3.jpg" alt="Resident Evil Village">
+                    <div class="box-text">
+                        <h2>Resident Evil Village</h2>
+                        <h3>Horror</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.6</span>
+                            </div>
+                            <a href="RES.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="mobiletablet">
+                <div class="box">
+                    <img src="new3.jpg" alt="Subway Surfers">
+                    <div class="box-text">
+                        <h2>Subway Surfers</h2>
+                        <h3>Adventure</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.5</span>
+                            </div>
+                            <a href="SUB.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <div class="box">
+                    <img src="hot4.jpg" alt="HADES II">
+                    <div class="box-text">
+                        <h2>HADES II</h2>
+                        <h3>Action</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.4</span>
+                            </div>
+                            <a href="HAD.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="mobiletablet">
+                <div class="box">
+                    <img src="new4.png" alt="MU: Dark Epoch">
+                    <div class="box-text">
+                        <h2>MU: Dark Epoch</h2>
+                        <h3>Adventure</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.8</span>
+                            </div>
+                            <a href="MUD.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <div class="box">
+                    <img src="hot5.jpg" alt="Final Fantasy XVI" >
+                    <div class="box-text">
+                        <h2>Final Fantasy XVI</h2>
+                        <h3>Action</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="FANT.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="mobiletablet">
+                <div class="box">
+                    <img src="new5.jpg" alt="PUBG MOBILE ">
+                    <div class="box-text">
+                        <h2>PUBG MOBILE </h2>
+                        <h3>Action</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.4</span>
+                            </div>
+                            <a href="PUBG.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <div class="box">
+                    <img src="hot6.png" alt="Plant Vs. Zombies">
+                    <div class="box-text">
+                        <h2>PVZ Garden Warfare</h2>
+                        <h3>Survival</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>3.7</span>
+                            </div>
+                            <a href="PVZ.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="mobiletablet">
+                <div class="box">
+                    <img src="new6.jpg" alt="Roblox">
+                    <div class="box-text">
+                        <h2>Roblox</h2>
+                        <h3>Survival</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.3</span>
+                            </div>
+                            <a href="ROB.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <div class="box">
+                    <img src="hot7.jpg" alt="Armored Core 6">
+                    <div class="box-text">
+                        <h2>Armored Core 6</h2>
+                        <h3>Action</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.1</span>
+                            </div>
+                            <a href="CORE.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="mobiletablet">
+                <div class="box">
+                    <img src="new7.jpg" alt="Racing Master">
+                    <div class="box-text">
+                        <h2>Racing Master</h2>
+                        <h3>Action</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.6</span>
+                            </div>
+                            <a href="RACE.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <div class="box">
+                    <img src="hot8.png" alt="GTA V">
+                    <div class="box-text">
+                        <h2>GTA V</h2>
+                        <h3>Adventure</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.4</span>
+                            </div>
+                            <a href="GTA.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="mobiletablet">
+                <div class="box">
+                    <img src="new8.webp" alt="Honor of Kings">
+                    <div class="box-text">
+                        <h2>Honor of Kings</h2>
+                        <h3>Action</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.6</span>
+                            </div>
+                            <a href="HOK.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <div class="box">
+                    <img src="hot9.jpg" alt="Mincecraft">
+                    <div class="box-text">
+                        <h2>Minecraft</h2>
+                        <h3>Survival</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.8</span>
+                            </div>
+                            <a href="MC.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="mobiletablet">
+                <div class="box">
+                    <img src="new9.jpg" alt="Genshin Impact">
+                    <div class="box-text">
+                        <h2>Genshin Impact</h2>
+                        <h3>Action</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="GI.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <div class="box">
+                    <img src="hot10.jpg" alt="Crossfire">
+                    <div class="box-text">
+                        <h2>Crossfire</h2>
+                        <h3>Action</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>4.6</span>
+                            </div>
+                            <a href="CF.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="mobiletablet">
+                <div class="box">
+                    <img src="new10.jpg" alt="Marvel Snap">
+                    <div class="box-text">
+                        <h2>Marvel Snap</h2>
+                        <h3>Mission</h3>
+                        <div class="progress-line"><span></span></div>
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <span>3.8</span>
+                            </div>
+                            <a href="MS.html" class="box-btn"><i class='bx bxs-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="tournaments" id="tourna">
+                <h2> TOURNAMENTS </h2>
+                <dvi class="boxbx">
+                    <div class="box">
+                        <img src="tourna1.jpg">
+                        <div class="content">
+                            <p> Mobile Legends Tournament</p>
+                            <div class="btn">
+                                <a href="https://www.youtube.com/@mplph.official" target="_blank" class="watch"> Watch Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="tourna2.jpg">
+                        <div class="content">
+                            <p> Valorant Tournament</p>
+                            <div class="btn">
+                                <a href="https://www.youtube.com/@VALORANTEsportsEMEA" target="_blank" class="watch"> Watch Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="box">
+                        <img src="tourna3.webp">
+                        <div class="content">
+                            <p> PUBG Tournament</p>
+                            <div class="btn">
+                                <a href="https://www.youtube.com/@PUBGEsports" target="_blank" class="watch"> Watch Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="box">
+                        <img src="tourna4.webp">
+                        <div class="content">
+                            <p> Call of Duty Tournament</p>
+                            <div class="btn">
+                                <a href="https://www.youtube.com/@CODLeague" target="_blank" class="watch"> Watch Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="box">
+                        <img src="tourna5.png">
+                        <div class="content">
+
+                            <p> HoK Tournament</p>
+                            <div class="btn">
+                                <a href="https://www.youtube.com/@VALORANTEsportsEMEA" target="_blank" class="watch"> Watch Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="box">
+                        <img src="tourna6.jpg">
+                        <div class="content">
+
+                            <p> Crossfire Tournament</p>
+                            <div class="btn">
+                                <a href="https://www.youtube.com/@CROSSFIRESTARS" target="_blank" class="watch"> Watch Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </dvi>
+            </div>
+
+            <div class="contact" id="contact">
+                <img src="contact.jpg">
+                <div class="form">
+                    <h1> Contact Us </h1>
+                     <div class="social-icons">
+                        <a href="https://www.instagram.com/jiar_mntn/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.facebook.com/jiar.mntn" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://x.com/Reynald20637475?t=Cc47yOM_96Reamb4WtI32A&s=07" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                    <form id="contactForm" onsubmit="sendToGmail(event)">
+                        <div class="inputBx">
+                            <p>Enter Name:</p>
+                            <input type="text" id="fullName" placeholder="Full Name" required>
+                         </div>
+                    <div class="inputBx">
+                        <p>Enter Email:</p>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="inputBx">
+                    <p>Message:</p>
+                    <textarea id="message" placeholder="Type here....." required></textarea>
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                </div>
+            </div>
+            
+            <footer>
+                <div class="copyright">
+                    <a href="#" class="logo"> Game<Span>Zone</Span> </a>
+                <p> &#169 Gamezoneph All Rights Reserved</p>
+                </div>
+            </footer>
+            
+
+    <script src="final.js"></script>
+</body>
+</html>
